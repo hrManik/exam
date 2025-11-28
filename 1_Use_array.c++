@@ -22,7 +22,7 @@ int searchElements(int arr[], int n, int key)
 }
 int insertElement(int arr[], int n, int pos, int value)
 {
-    for (int i = 0; i > pos; i--)
+    for (int i = n; i > pos; i--)
     {
         arr[i] = arr[i - 1];
     }
@@ -56,4 +56,5 @@ int main()
         cout << "Element " << key << " Found at index " << index << endl;
     else
         cout << "Element " << key << "Not found " << endl;
+
 }
